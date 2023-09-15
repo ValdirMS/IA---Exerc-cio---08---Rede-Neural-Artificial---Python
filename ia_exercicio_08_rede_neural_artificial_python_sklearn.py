@@ -14,7 +14,7 @@ Original file is located at
 import pandas as pd
 # Carregando dados do arquivo CSV
 url = 'https://raw.githubusercontent.com/ValdirMS/IA---Exerc-cio---08---Rede-Neural-Artificial---Python/main/diabetes.csv'
-base_Treinamento = pd.read_csv(url,sep=';', encoding = 'latin1').values
+base_Treinamento = pd.read_csv(url,sep=',', encoding = 'latin1').values
 print("---------------------------------")
 print("Dados dos Pacientes - TREINAMENTO")
 print("---------------------------------")
@@ -86,7 +86,7 @@ print("Galvona", modelo.predict(Galvona))
 import pandas as pd
 # Carregando dados do arquivo CSV
 url = 'https://raw.githubusercontent.com/ValdirMS/IA---Exerc-cio---08---Rede-Neural-Artificial---Python/main/diabetes.csv'
-base_Testes = pd.read_csv(url,sep=';', encoding = 'latin1').values
+base_Testes = pd.read_csv(url,sep=',', encoding = 'latin1').values
 print("----------------------------")
 print("Dados dos Pacientes - TESTES")
 print("----------------------------")
@@ -127,7 +127,7 @@ base_Predicao = modelo.predict((sintomas))
 print("Classificações: ", base_Predicao)
 
 """### Retorno aos valores Categóricos"""
-
+#Incorreto
 import numpy as np
 from sklearn import preprocessing
 
